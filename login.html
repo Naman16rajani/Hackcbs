@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link type="text/css" rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!--    <form method="post" action="/log-in">-->
+    <!--        <label>name:</label>-->
+    <!--        <input type="text" name="name">-->
+    <!--        <input type="password" name="password">-->
+    <!--        <input type="submit" value="log in">-->
+    <!--    </form>-->
+    <!--    <br>-->
+    <!--    <form method="post" action="/sign-up">-->
+    <!--        <label>name:</label>-->
+    <!--        <input type="text" name="name">-->
+    <!--        <input type="password" name="password">-->
+    <!--        <input type="submit" value="sign up">-->
+    <!--    </form>-->
+
+    <div class="materialContainer">
+
+
+        <div class="box">
+            <form method="post" action="/login">
+
+                <div class="title">LOGIN</div>
+
+                <div class="input">
+                    <label for="name">Username</label>
+                    <input type="text" name="name" id="name" autocomplete="off">
+                    <span class="spin"></span>
+                </div>
+
+                <div class="input">
+                    <label for="pass">Password</label>
+                    <input type="password" name="password" id="pass">
+                    <span class="spin"></span>
+                </div>
+
+                <div class="button login">
+                    <button type="submit"><span>GO</span> <i class="fa fa-check"></i></button>
+                </div>
+
+                <!--            <a href="" class="pass-forgot">Forgot your password?</a>-->
+            </form>
+
+        </div>
+
+        <div class="overbox" style="padding-top: 40px;">
+            <form method="post" action="/sign-up">
+
+                <div class="material-button alt-2"><span class="shape"></span></div>
+
+                <div class="title">REGISTER</div>
+
+                <div class="input" style="margin-top: 5px;">
+                    <label for="regname">Username</label>
+                    <input type="text" name="name" id="regname" autocomplete="off">
+                    <span class="spin"></span>
+                </div>
+
+                <div class="input" style="margin-top: 5px;">
+                    <label for="regpass">Password</label>
+                    <input type="password" name="password" id="regpass">
+                    <span class="spin"></span>
+                </div>
+
+                <div class="input" style="margin-top: 5px;">
+                    <label for="mobileno">Mobile No:</label>
+                    <input type="tel" name="mobileno" id="mobileno">
+                    <span class="spin"></span>
+                </div>
+                <div class="input" style="margin-top: 5px;">
+                    <label for="email">Email ID</label>
+                    <input type="email" name="email" id="email">
+                    <span class="spin"></span>
+                </div>
+                <!--                    <a href="" class="pass-forgot">Forgot your password?</a>-->
+
+                <div class="button" style="margin-top: 10px;">
+                    <button type="submit"><span>NEXT</span></button>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="style.js" rel="script"></script>
+</body>
+
+</html>

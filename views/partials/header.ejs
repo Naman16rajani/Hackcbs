@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>HealthUtopia &mdash;Website for health</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/style.css">
+<!--    <script>-->
+<!--        window.watsonAssistantChatOptions = {-->
+<!--            integrationID: "82f6618e-9982-4370-9c02-2b409a4185db", // The ID of this integration.-->
+<!--            region: "us-east", // The region your integration is hosted in.-->
+<!--            serviceInstanceID: "07c4c2f6-fe61-4ab8-b440-c516411abc45", // The ID of your service instance.-->
+<!--            onLoad: function (instance) {-->
+<!--                instance.render();-->
+<!--            }-->
+<!--        };-->
+<!--        setTimeout(function () {-->
+<!--            const t = document.createElement('script');-->
+<!--            t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window-->
+<!--                .watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"-->
+<!--            document.head.appendChild(t);-->
+<!--        });-->
+<!--    </script>-->
+    <style>
+        .dropbtn {
+            background-color: #ffffff00;
+            color: rgba(255, 255, 255, 0.7);
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+            position: relative;
+            /*display: inline-block;*/
+        }
+
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+            display: none;
+            /*position: absolute;*/
+            background-color: #ffffff00;
+            min-width: 160px;
+            /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+            z-index: 1;
+            color: white;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            /*color: black;*/
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content:hover {
+            background-color: #ffffff00;
+            color: #2fc4b2;
+        }
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        .dropdown:hover .dropbtn {
+            background-color: #ffffff00;
+            color: white;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/526ca4f3af.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<button type="button" class="chatLauncher" style="display:none;">
+    <div>
+        <strong>Have questions?</strong> Talk with Ross our Virtual Assistant.
+    </div>
+</button>
+<script>
+    window.watsonAssistantChatOptions = {
+        integrationID: "82f6618e-9982-4370-9c02-2b409a4185db",
+        region: "us-east",
+        serviceInstanceID: "07c4c2f6-fe61-4ab8-b440-c516411abc45",
+
+        showLauncher: false,
+        onLoad: function(instance) {
+            // Select the button element from the page.
+            const button = document.querySelector('.chatLauncher');
+
+            // Add the event listener to open your web chat.
+            button.addEventListener('click', function clickListener() {
+                instance.openWindow();
+            });
+
+            // Render the web chat. Nothing appears on the page, because the launcher is
+            // hidden and the web chat window is closed by default.
+            instance.render().then(function() {
+                // Now that web chat has been rendered (but is still closed), we make the
+                // custom launcher button visible.
+                button.style.display = 'block';
+                button.classList.add('open');
+            });
+        }
+    };
+
+    setTimeout(function(){const t=document.createElement('script');t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";document.head.appendChild(t);});
+</script>
+
+
+<div class="site-wrap" id="home-section">
+
+    <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+                <span class="icon-close2 js-menu-toggle"></span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div>
+
+
+
+    <header class="site-navbar site-navbar-target" role="banner">
+
+        <div class="container">
+            <div class="row align-items-center position-relative">
+
+                <div class="col-3">
+                    <div class="site-logo">
+                        <a href="index.html">HealthUtopia<span class="text-primary">.</span> </a>
+                    </div>
+                </div>
+
+                <div class="col-9 text-right">
+
+                        <span class="d-inline-block d-lg-none"><a href="#"
+                                                                  class=" site-menu-toggle js-menu-toggle py-5 "><span
+                                        class="icon-menu h3 text-white"></span></a></span>
+
+                    <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
+                        <ul class="site-menu main-menu js-clone-nav ml-auto ">
+                            <li <% if (filename==="index.html"){%>
+                                class="active"
+                                    <%}%>>
+                                <a href="index.html" class="nav-link">Home</a></li>
+                            <li <% if (filename==="services.html"){%>
+                                class="active"
+                                    <%}%>>
+
+                                <a href="services.html" class="nav-link">Features/Tools</a></li>
+                            <li <% if (filename==="testimonials.html"){%>
+                                class="active"
+                                    <%}%>>
+                                <a href="testimonials.html" class="nav-link">Reviews</a></li>
+                            <li <% if (filename==="blog.html"){%>
+                                class="active"
+                                    <%}%>>
+                                <a href="blog.html" class="nav-link">News/blog</a></li>
+                            <li <% if (filename==="about.html"){%>
+                                class="active"
+                                    <%}%>>
+                                <a href="about.html" class="nav-link">About us</a></li>
+                            <!-- <li><a href="contact.html" class="nav-link">Contact us</a></li> -->
+                            <li class="nav item dropdown dropbtn"><a class="nav-link dropdown-toggle" href="#"
+                                                                     id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                                                     aria-expanded="false"><i class="fas fa-user"></i></a>
+                                <ul class="dropdown-menu dropdown-menu-" aria-labelledby="navbarDropdown" style="background-color: #ffffff00;">
+                                    <li><a class="dropdown-item dropdown-content" href="#"><%=name%></a></li>
+                                    <li><a class="dropdown-item dropdown-content" href="#"><%=email%></a></li>
+                                    <li><a class="dropdown-item dropdown-content" href="#"><%=mobileno%></a></li>
+                                    <li><a class="dropdown-item dropdown-content" href="logout">logout <i class="fas fa-sign-out-alt"></i></a></li>
+
+
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+
+
+            </div>
+        </div>
+
+    </header>

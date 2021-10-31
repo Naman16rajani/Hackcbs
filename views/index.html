@@ -1,0 +1,847 @@
+<!--<!doctype html>-->
+<!--<html lang="en">-->
+
+<!--<head>-->
+<!--    <title>Healthcare &mdash;Website by College students</title>-->
+<!--    <meta charset="utf-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+
+<!--    <link-->
+<!--        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap"-->
+<!--        rel="stylesheet">-->
+<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"-->
+<!--        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">-->
+
+<!--    <link rel="stylesheet" href="fonts/icomoon/style.css">-->
+
+<!--    <link rel="stylesheet" href="css/bootstrap.min.css">-->
+<!--    <link rel="stylesheet" href="css/bootstrap-datepicker.css">-->
+<!--    <link rel="stylesheet" href="css/jquery.fancybox.min.css">-->
+<!--    <link rel="stylesheet" href="css/owl.carousel.min.css">-->
+<!--    <link rel="stylesheet" href="css/owl.theme.default.min.css">-->
+<!--    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">-->
+<!--    <link rel="stylesheet" href="css/aos.css">-->
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<!--    &lt;!&ndash; MAIN CSS &ndash;&gt;-->
+<!--    <link rel="stylesheet" href="css/style.css">-->
+<!--    <script>-->
+<!--        window.watsonAssistantChatOptions = {-->
+<!--            integrationID: "82f6618e-9982-4370-9c02-2b409a4185db", // The ID of this integration.-->
+<!--            region: "us-east", // The region your integration is hosted in.-->
+<!--            serviceInstanceID: "07c4c2f6-fe61-4ab8-b440-c516411abc45", // The ID of your service instance.-->
+<!--            onLoad: function (instance) {-->
+<!--                instance.render();-->
+<!--            }-->
+<!--        };-->
+<!--        setTimeout(function () {-->
+<!--            const t = document.createElement('script');-->
+<!--            t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window-->
+<!--                .watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"-->
+<!--            document.head.appendChild(t);-->
+<!--        });-->
+<!--    </script>-->
+<!--    <style>-->
+<!--        .dropbtn {-->
+<!--            background-color: #ffffff00;-->
+<!--            color: rgba(255, 255, 255, 0.7);-->
+<!--            padding: 16px;-->
+<!--            font-size: 16px;-->
+<!--            border: none;-->
+<!--        }-->
+
+<!--        /* The container <div> - needed to position the dropdown content */-->
+<!--        .dropdown {-->
+<!--            position: relative;-->
+<!--            /*display: inline-block;*/-->
+<!--        }-->
+
+<!--        /* Dropdown Content (Hidden by Default) */-->
+<!--        .dropdown-content {-->
+<!--            display: none;-->
+<!--            /*position: absolute;*/-->
+<!--            background-color: #ffffff00;-->
+<!--            min-width: 160px;-->
+<!--            /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/-->
+<!--            z-index: 1;-->
+<!--            color: white;-->
+<!--        }-->
+
+<!--        /* Links inside the dropdown */-->
+<!--        .dropdown-content a {-->
+<!--            /*color: black;*/-->
+<!--            padding: 12px 16px;-->
+<!--            text-decoration: none;-->
+<!--            display: block;-->
+<!--        }-->
+
+<!--        /* Change color of dropdown links on hover */-->
+<!--        .dropdown-content:hover {-->
+<!--            background-color: #ffffff00;-->
+<!--            color: #2fc4b2;-->
+<!--        }-->
+
+<!--        /* Show the dropdown menu on hover */-->
+<!--        .dropdown:hover .dropdown-content {-->
+<!--            display: block;-->
+<!--        }-->
+
+<!--        /* Change the background color of the dropdown button when the dropdown content is shown */-->
+<!--        .dropdown:hover .dropbtn {-->
+<!--            background-color: #ffffff00;-->
+<!--            color: white;-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+
+<!--<body>-->
+
+
+<!--    <div class="site-wrap" id="home-section">-->
+
+<!--        <div class="site-mobile-menu site-navbar-target">-->
+<!--            <div class="site-mobile-menu-header">-->
+<!--                <div class="site-mobile-menu-close mt-3">-->
+<!--                    <span class="icon-close2 js-menu-toggle"></span>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="site-mobile-menu-body"></div>-->
+<!--        </div>-->
+
+
+
+<!--        <header class="site-navbar site-navbar-target" role="banner">-->
+
+<!--            <div class="container">-->
+<!--                <div class="row align-items-center position-relative">-->
+
+<!--                    <div class="col-3">-->
+<!--                        <div class="site-logo">-->
+<!--                            <a href="index.html">Healthcare<span class="text-primary">.</span> </a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                    <div class="col-9 text-right">-->
+
+<!--                        <span class="d-inline-block d-lg-none"><a href="#"-->
+<!--                                class=" site-menu-toggle js-menu-toggle py-5 "><span-->
+<!--                                    class="icon-menu h3 text-white"></span></a></span>-->
+
+<!--                        <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">-->
+<!--                            <ul class="site-menu main-menu js-clone-nav ml-auto ">-->
+<!--                                <li class="active"><a href="index.html" class="nav-link">Home</a></li>-->
+<!--                                <li><a href="services.html" class="nav-link">Features/Tools</a></li>-->
+<!--                                <li><a href="testimonials.html" class="nav-link">Reviews</a></li>-->
+<!--                                <li><a href="blog.html" class="nav-link">News/blog</a></li>-->
+<!--                                <li><a href="about.html" class="nav-link">About us</a></li>-->
+<!--                                &lt;!&ndash; <li><a href="contact.html" class="nav-link">Contact us</a></li> &ndash;&gt;-->
+<!--                                <li class="nav item dropdown dropbtn"><a class="nav-link dropdown-toggle" href="#"-->
+<!--                                        id="navbarDropdown" role="button" data-bs-toggle="dropdown"-->
+<!--                                        aria-expanded="false">USER</a>-->
+<!--                                    <ul class="dropdown-menu dropdown-menu-" aria-labelledby="navbarDropdown" style="background-color: #ffffff00;">-->
+<!--                                        <li><a class="dropdown-item dropdown-content" href="#"><%=name%></a></li>-->
+<!--                                        <li><a class="dropdown-item dropdown-content" href="#"><%=email%></a></li>-->
+<!--                                        <li><a class="dropdown-item dropdown-content" href="#"><%=mobileno%></a></li>-->
+<!--                                        <li><a class="dropdown-item dropdown-content" href="logout">logout</a></li>-->
+
+
+<!--                                    </ul>-->
+<!--                                </li>-->
+
+<!--                            </ul>-->
+<!--                        </nav>-->
+<!--                    </div>-->
+
+
+<!--                </div>-->
+<!--            </div>-->
+
+<!--        </header>-->
+
+<%-include('partials/header')-%>
+<div class="hero"
+    style="background-image: url('images/health-concept-stethoscope-on-black-260nw-1017037081_auto_x2.jpg');">
+
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-8 intro text-center">
+                <h1 class="text-white"><strong class="text-primary">Health</strong> is wealth.</h1>
+                <div class="desc">Health is a state of complete physical, mental and social well being. For a
+                    healthy life
+                    cycle, a person needs to have a balanced diet and has to regularly exercise. One must also
+                    live in a
+                    proper shelter, take enough sleep and have good hygiene habits.</div>
+
+                <div class="col-lg-8 mx-auto">
+                    <a href="video/Health Utopia Video.mp4" data-fancybox class=" play-now mx-auto">
+
+                        <!--                            <a href="https://vimeo.com/342333493" data-fancybox class=" play-now mx-auto">-->
+                        <span class="icon">
+                            <span class="icon-play"></span>
+                        </span>
+                        <span class="caption text-white">Watch intro video</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--        <div class="services">-->
+<!--            <div class="container-fluid px-0">-->
+<!--                <div class="row no-gutters align-items-stretch">-->
+<!--                    <div class="col-6 col-sm-6 col-md col-lg h-100">-->
+<!--                        <a href="services.html#disease_identifier" class="service">-->
+<!--                            <div class="icon-wrap">-->
+<!--                                <span class="flaticon-acupuncture-2"></span>-->
+<!--                            </div>-->
+<!--                            <h3>Disease Identifier</h3>-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                    <div class="col-6 col-sm-6 col-md col-lg h-100">-->
+<!--                        <a href="services.html#medics_diet" class="service">-->
+<!--                            <div class="icon-wrap">-->
+<!--                                <span class="flaticon-herbal"></span>-->
+<!--                            </div>-->
+<!--                            <h3>Medics and diet</h3>-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                    <div class="col-6 col-sm-6 col-md col-lg h-100">-->
+<!--                        <a href="services.html#exercise_yoga" class="service">-->
+<!--                            <div class="icon-wrap">-->
+<!--                                <span class="flaticon-acupuncture-1"></span>-->
+<!--                            </div>-->
+<!--                            <h3>Exercise/Yoga</h3>-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                    <div class="col-6 col-sm-6 col-md col-lg h-100">-->
+<!--                        <a href="services.html#alarm_remind" class="service">-->
+<!--                            <div class="icon-wrap">-->
+<!--                                <span class="flaticon-therapy"></span>-->
+<!--                            </div>-->
+<!--                            &lt;!&ndash; <i class="fa fa-clock-o" style="font-size:85px;color:rgb(253, 253, 253)"></i> &ndash;&gt;-->
+<!--                            <h3>Alarm/Remind Me!</h3>-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                    <div class="col-6 col-sm-6 col-md col-lg h-100">-->
+<!--                        <a href="services.html#medics_nearby" class="service">-->
+<!--                            <div class="icon-wrap">-->
+<!--                                <span class="flaticon-acupuncture"></span>-->
+<!--                            </div>-->
+<!--                            <h3>Medics nearby me</h3>-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                    <div class="col-6 col-sm-6 col-md col-lg h-100">-->
+<!--                        <a href="services.html#find_doc" class="service">-->
+<!--                            <div class="icon-wrap">-->
+<!--                                <span href="https://www.flaticon.com/authors/becris"-->
+<!--                                    class="flaticon-acupuncture"></span>-->
+<!--                            </div>-->
+<!--                            &lt;!&ndash; <div class="icon-wrap"> -->
+<!--                <span href="https://www.flaticon.com/authors/becris" class="flaticon-acupunture"></span>-->
+<!--                </div> &ndash;&gt;-->
+<!--                            <h3>Find a Doc!</h3>-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<%-include('partials/bar')-%>
+
+<div class="site-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7 text-center order-lg-2">
+                <!--                        <div class="img-wrap-1 mb-5">-->
+                <!--                            <img src="images/accupuncture_1.png" alt="Image" class="img-fluid">-->
+                <!--                        </div>-->
+                <div class="img-wrap-1 mb-5">
+                    <img src="images/care-connection-device-diagnosis.jpg" alt="Image" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-lg-4 ml-auto order-lg-1">
+                <h3 class="mb-4 section-heading"><strong>Why Choose Us</strong></h3>
+                <p class="mb-5">Years of clinical experience, Team of best Doctors and Care takers from around the
+                    world,
+                    Personalized and
+                    Dedicated health advice, Use of Advanced Technologies, Customized features and tools designed
+                    specially
+                    for overall health monitoring, Pocket friendly, Unparalled patient experience!</p>
+
+                <p><a href="#" class="btn btn-primary">Contact us now</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mb-4">
+            <a href="#" class="d-flex service-2">
+              <div class="icon-wrap">
+                <span class="flaticon-acupuncture"></span>
+              </div>
+              <div class="contents">
+                <h3>Consectetur Adipisicing Elit</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro culpa, eveniet nostrum omnis aliquid
+                  incidunt. Officia minus quae quasi earum!</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-6 mb-4">
+            <a href="#" class="d-flex service-2">
+              <div class="icon-wrap">
+                <span class="flaticon-acupuncture-1"></span>
+              </div>
+              <div class="contents">
+                <h3>Lorem Ipsum Dolor</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro culpa, eveniet nostrum omnis aliquid
+                  incidunt. Officia minus quae quasi earum!</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-6 mb-4">
+            <a href="#" class="d-flex service-2">
+              <div class="icon-wrap">
+                <span class="flaticon-therapy"></span>
+              </div>
+              <div class="contents">
+                <h3>Eveniet Nostrum Omnis</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro culpa, eveniet nostrum omnis aliquid
+                  incidunt. Officia minus quae quasi earum!</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-6 mb-4">
+            <a href="#" class="d-flex service-2">
+              <div class="icon-wrap">
+                <span class="flaticon-herbal"></span>
+              </div>
+              <div class="contents">
+                <h3>Lorem Ipsum Dolor</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro culpa, eveniet nostrum omnis aliquid
+                  incidunt. Officia minus quae quasi earum!</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+ -->
+<div class="site-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <a href="services.html#disease_identifier" class="d-flex service-2">
+                    <div class="icon-wrap">
+                        <!--                                <span class="flaticon-acupuncture"></span>-->
+                        <span><i class="fas fa-heartbeat"></i></span>
+
+                    </div>
+                    <div class="contents">
+                        <h3>Disease Identifier</h3>
+                        <p>This tool can be used to search any basic diseases by entering symptoms of that
+                            particular disease!
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <a href="services.html#medics_diet" class="d-flex service-2">
+                    <div class="icon-wrap">
+                        <!--                                <span class="flaticon-acupuncture-1"></span>-->
+                        <span><i class="fas fa-carrot"></i></span>
+
+                    </div>
+                    <div class="contents">
+                        <h3>Medics & Diet</h3>
+                        <p>This tool can be used to search some basic medics and suitable diet for disease you
+                            have!</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-6 mb-4">
+                <a href="services.html#exercise_yoga" class="d-flex service-2">
+                    <div class="icon-wrap">
+                        <!--                                <span class="flaticon-therapy"></span>-->
+                        <span><i class="fas fa-running"></i></span>
+
+                    </div>
+                    <div class="contents">
+                        <h3>Exercise/Yoga</h3>
+                        <p>This tool can be used to search suitable exercise and yoga for health and according
+                            to problem you
+                            have!</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <a href="services.html#alarm_remind" class="d-flex service-2">
+                    <div class="icon-wrap">
+                        <!--                                <span class="flaticon-herbal"></span>-->
+                        <span> <i class="fa fa-clock-o"></i></span>
+
+                    </div>
+                    <div class="contents">
+                        <h3>Alarm/Remind me!</h3>
+                        <p>This tool is used to set a reminder which will be sent to your email/phone no. for
+                            medicine as well
+                            as appointment you have with doctor</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-6 mb-4">
+                <a href="services.html#medics_nearby" class="d-flex service-2">
+                    <div class="icon-wrap">
+                        <!--                                <span class="flaticon-lithotherapy"></span>-->
+                        <span><i class="fas fa-search-location"></i></span>
+
+                    </div>
+                    <div class="contents">
+                        <h3>Medics nearby me</h3>
+                        <p>This tool can be used to search medical store nearby your loaction</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <a href="services.html#find_doc" class="d-flex service-2">
+                    <div class="icon-wrap">
+                        <!--                                <span class="flaticon-acupuncture-2"></span>-->
+                        <span><i class="fas fa-user-md"></i></span>
+
+                    </div>
+                    <div class="contents">
+                        <h3>Find a doc</h3>
+                        <p>This tool can be used to search best doctors and treatment available by entering
+                            disease to given
+                            search box!</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--        <div class="site-section bg-light">-->
+<!--            <div class="container">-->
+<!--                <div class="row">-->
+<!--                    <div class="col-lg-7 text-center mx-auto">-->
+<!--                        <span class="text-primary d-block">Testimonials</span>-->
+<!--                        <h2 class="section-heading"><strong>Happy Customers</strong></h2>-->
+<!--                        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="row">-->
+<!--                    <div class="col-lg-4 mb-4 mb-lg-0">-->
+<!--                        <div class="testimonial-2">-->
+<!--                            <blockquote class="mb-4">-->
+<!--                                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt-->
+<!--                                    eveniet veniam.-->
+<!--                                    Ipsam, nam, voluptatum"</p>-->
+<!--                            </blockquote>-->
+<!--                            <div class="d-flex v-card align-items-center">-->
+<!--                                <img src="images/person_1.jpg" alt="Image" class="img-fluid mr-3">-->
+<!--                                <div class="author-name">-->
+<!--                                    <span class="d-block">Mike Fisher</span>-->
+<!--                                    <span>Owner, Ford</span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-lg-4 mb-4 mb-lg-0">-->
+<!--                        <div class="testimonial-2">-->
+<!--                            <blockquote class="mb-4">-->
+<!--                                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt-->
+<!--                                    eveniet veniam.-->
+<!--                                    Ipsam, nam, voluptatum"</p>-->
+<!--                            </blockquote>-->
+<!--                            <div class="d-flex v-card align-items-center">-->
+<!--                                <img src="images/person_2.jpg" alt="Image" class="img-fluid mr-3">-->
+<!--                                <div class="author-name">-->
+<!--                                    <span class="d-block">Jean Stanley</span>-->
+<!--                                    <span>Traveler</span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-lg-4 mb-4 mb-lg-0">-->
+<!--                        <div class="testimonial-2">-->
+<!--                            <blockquote class="mb-4">-->
+<!--                                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt-->
+<!--                                    eveniet veniam.-->
+<!--                                    Ipsam, nam, voluptatum"</p>-->
+<!--                            </blockquote>-->
+<!--                            <div class="d-flex v-card align-items-center">-->
+<!--                                <img src="images/person_3.jpg" alt="Image" class="img-fluid mr-3">-->
+<!--                                <div class="author-name">-->
+<!--                                    <span class="d-block">Katie Rose</span>-->
+<!--                                    <span>Customer</span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="site-section">-->
+<!--            <div class="container">-->
+<!--                <div class="row">-->
+<!--                    <div class="col-lg-7 text-center mx-auto">-->
+<!--                        <span class="text-primary d-block">Blog</span>-->
+<!--                        <h2 class="section-heading"><strong>News &amp; Tips</strong></h2>-->
+<!--                        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="row">-->
+<!--                    <div class="col-lg-4">-->
+<!--                        <div class="post-entry-1 h-100">-->
+<!--                            <a href="single.html" class="mb-3 d-block">-->
+<!--                                <img src="images/img_1.jpg" alt="Image" class="img-fluid">-->
+<!--                            </a>-->
+<!--                            <div class="post-entry-1-contents">-->
+
+<!--                                <span class="meta d-inline-block">July 17, 2019 <span class="mx-2">by</span> <a-->
+<!--                                        href="#">Admin</a></span>-->
+<!--                                <h2><a href="single.html">Natural Healing For The Body</a></h2>-->
+
+<!--                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eos soluta, dolore-->
+<!--                                    harum molestias-->
+<!--                                    consectetur.</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-lg-4">-->
+<!--                        <div class="post-entry-1 h-100">-->
+<!--                            <a href="single.html" class="mb-3 d-block">-->
+<!--                                <img src="images/img_2.jpg" alt="Image" class="img-fluid">-->
+<!--                            </a>-->
+<!--                            <div class="post-entry-1-contents">-->
+
+<!--                                <span class="meta d-inline-block">July 17, 2019 <span class="mx-2">by</span> <a-->
+<!--                                        href="#">Admin</a></span>-->
+<!--                                <h2><a href="single.html">Natural Healing For The Body</a></h2>-->
+
+<!--                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eos soluta, dolore-->
+<!--                                    harum molestias-->
+<!--                                    consectetur.</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-lg-4">-->
+<!--                        <div class="post-entry-1 h-100">-->
+<!--                            <a href="single.html" class="mb-3 d-block">-->
+<!--                                <img src="images/img_3.jpg" alt="Image" class="img-fluid">-->
+<!--                            </a>-->
+<!--                            <div class="post-entry-1-contents">-->
+
+<!--                                <span class="meta d-inline-block">July 17, 2019 <span class="mx-2">by</span> <a-->
+<!--                                        href="#">Admin</a></span>-->
+<!--                                <h2><a href="single.html">Natural Healing For The Body</a></h2>-->
+
+<!--                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eos soluta, dolore-->
+<!--                                    harum molestias-->
+<!--                                    consectetur.</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+
+<div class="site-section bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 text-center mx-auto">
+                <span class="text-primary d-block">Testimonials</span>
+                <h2 class="section-heading"><strong>Happy Customers</strong></h2>
+                <p class="mb-5">Inspiring stories of our Patients.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <div class="testimonial-2">
+                    <blockquote class="mb-4">
+                        <p>"I had an amazing experience here and was so satisfied with the service provided. It feels
+                            like
+                            having a personal caretaker. I would recommend it to everyone around me."</p>
+                    </blockquote>
+                    <div class="d-flex v-card align-items-center">
+                        <img src="images/person_1.jpg" alt="Image" class="img-fluid mr-3">
+                        <div class="author-name">
+                            <span class="d-block">Michael John</span>
+                            <span>Teacher</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <div class="testimonial-2">
+                    <blockquote class="mb-4">
+                        <p>"One of my colleagues recommended this website to me and I am so thankful for that. It helps
+                            me to
+                            take my medicines on time. HealthUtopia has now become an integral part of my life."</p>
+                    </blockquote>
+                    <div class="d-flex v-card align-items-center">
+                        <img src="images/person_2.jpg" alt="Image" class="img-fluid mr-3">
+                        <div class="author-name">
+                            <span class="d-block">Rose Brad</span>
+                            <span>HR Manager</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <div class="testimonial-2">
+                    <blockquote class="mb-4">
+                        <p>"I love HealthUtopia. It's so good and convenient to use. I don't need to remember anything
+                            like my
+                            appointments with the doctor and all. It also helps me to stay active and fit."</p>
+                    </blockquote>
+                    <div class="d-flex v-card align-items-center">
+                        <img src="images/person_3.jpg" alt="Image" class="img-fluid mr-3">
+                        <div class="author-name">
+                            <span class="d-block">Olivia Mason</span>
+                            <span>Marketing Executive</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="site-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 text-center mx-auto">
+                <!-- <span class="text-primary d-block">Blog</span> -->
+                <h2 class="section-heading"><strong>Blog Posts</strong></h2>
+                <p class="mb-5">Read on to know more about being healthful!!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="post-entry-1 h-100">
+                    <a href="single.html" class="mb-3 d-block">
+                        <img src="images/naturalhealing.jpg" alt="Image" class="img-fluid">
+                    </a>
+                    <div class="post-entry-1-contents">
+
+                        <span class="meta d-inline-block">July 17, 2020 <span class="mx-2">by</span> <a
+                                href="#">Admin</a></span>
+                        <h2><a href="single.html">Natural Healing For The Body</a></h2>
+
+                        <p>Healing involves the allowing and supporting of our different and multiple components to come
+                            back into alignment.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="post-entry-1 h-100">
+                    <a href="single.html" class="mb-3 d-block">
+                        <img src="images/home-remedies.jpg" alt="Image" class="img-fluid">
+                    </a>
+                    <div class="post-entry-1-contents">
+
+                        <span class="meta d-inline-block">July 17, 2020 <span class="mx-2">by</span> <a
+                                href="#">Admin</a></span>
+                        <h2><a href="single.html">Home Remedies</a></h2>
+
+                        <p>It is a traditional therapy often utilizing natural products, nutritional supplements, or
+                            physical measures.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="post-entry-1 h-100">
+                    <a href="single.html" class="mb-3 d-block">
+                        <img src="images/healthlife.jpg" alt="Image" class="img-fluid">
+                    </a>
+                    <div class="post-entry-1-contents">
+
+                        <span class="meta d-inline-block">July 17, 2020 <span class="mx-2">by</span> <a
+                                href="#">Admin</a></span>
+                        <h2><a href="single.html">Keys to longer life</a></h2>
+
+                        <p>A healthy living includes Good Nutrition, Daily Exercise, and Adequate Sleep. It keeps us
+                            fit, energetic and at a reduced risk for disease.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 
+<div class="site-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 text-center mx-auto">
+                <span class="text-primary d-block">Blog</span>
+                <h2 class="section-heading"><strong>News &amp; Tips</strong></h2>
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="post-entry-1 h-100">
+                    <a href="single.html" class="mb-3 d-block">
+                        <img src="images/img_1.jpg" alt="Image" class="img-fluid">
+                    </a>
+                    <div class="post-entry-1-contents">
+
+                <span class="meta d-inline-block">July 17, 2019 <span class="mx-2">by</span> <a
+                        href="#">Admin</a></span>
+                        <h2><a href="single.html">Natural Healing For The Body</a></h2>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eos soluta, dolore harum molestias
+                            consectetur.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="post-entry-1 h-100">
+                    <a href="single.html" class="mb-3 d-block">
+                        <img src="images/img_2.jpg" alt="Image" class="img-fluid">
+                    </a>
+                    <div class="post-entry-1-contents">
+
+                <span class="meta d-inline-block">July 17, 2019 <span class="mx-2">by</span> <a
+                        href="#">Admin</a></span>
+                        <h2><a href="single.html">Natural Healing For The Body</a></h2>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eos soluta, dolore harum molestias
+                            consectetur.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="post-entry-1 h-100">
+                    <a href="single.html" class="mb-3 d-block">
+                        <img src="images/img_3.jpg" alt="Image" class="img-fluid">
+                    </a>
+                    <div class="post-entry-1-contents">
+
+                <span class="meta d-inline-block">July 17, 2019 <span class="mx-2">by</span> <a
+                        href="#">Admin</a></span>
+                        <h2><a href="single.html">Natural Healing For The Body</a></h2>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eos soluta, dolore harum molestias
+                            consectetur.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+
+<!--        &lt;!&ndash; <div class="site-section bg-primary py-5">-->
+<!--      <div class="container">-->
+<!--        <div class="row align-items-center">-->
+<!--          <div class="col-lg-7 mb-4 mb-md-0">-->
+<!--            <h2 class="mb-0 text-white">What are you waiting for?</h2>-->
+<!--            <p class="mb-0 opa-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>-->
+<!--          </div>-->
+<!--          <div class="col-lg-5 text-md-right">-->
+<!--            <a href="#" class="btn btn-primary btn-white">Contact us now</a>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div> &ndash;&gt;-->
+
+
+
+<!--        <footer class="site-footer py-5">-->
+<!--            <div class="container">-->
+
+<!--                <div class="row">-->
+<!--                    <div class="col-lg-4">-->
+
+<!--                        <div class="text-center quick-contact-info">-->
+<!--                            <div class="mb-3 icon-wrap">-->
+<!--                                <span class="icon-phone"></span>-->
+<!--                            </div>-->
+<!--                            <span class="caption">23456633****</span>-->
+<!--                        </div>-->
+
+<!--                    </div>-->
+<!--                    <div class="col-lg-4">-->
+
+<!--                        <div class="text-center quick-contact-info">-->
+<!--                            <div class="mb-3 icon-wrap">-->
+<!--                                <span class="icon-room"></span>-->
+<!--                            </div>-->
+<!--                            <span class="caption">Gujrat, India-->
+<!--                            </span>-->
+<!--                        </div>-->
+
+<!--                    </div>-->
+<!--                    <div class="col-lg-4">-->
+
+<!--                        <div class="text-center quick-contact-info">-->
+<!--                            <div class="mb-3 icon-wrap">-->
+<!--                                <span class="icon-envelope-o"></span>-->
+<!--                            </div>-->
+<!--                            <span class="caption">abc@mydomain.com</span>-->
+<!--                        </div>-->
+
+<!--                    </div>-->
+<!--                </div>-->
+
+
+<!--                <div class="row pt-5 mt-5 text-center">-->
+<!--                    <div class="col-lg-7 text-lg-left">-->
+<!--                        <p>-->
+<!--                            &lt;!&ndash; Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. &ndash;&gt;-->
+<!--                            Copyright &copy;-->
+<!--                            <script>-->
+<!--                                document.write(new Date().getFullYear());-->
+<!--                            </script> All rights reserved <i aria-hidden="true"></i><a href="https://colorlib.com"-->
+<!--                                target="_blank"></a>-->
+<!--                            &lt;!&ndash; Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. &ndash;&gt;-->
+<!--                        </p>-->
+<!--                    </div>-->
+<!--                    <div class="col-lg-5 text-lg-right">-->
+<!--                        <a href="#" class="ml-3">Terms</a>-->
+<!--                        <a href="#" class="ml-3">Privacy</a>-->
+<!--                    </div>-->
+<!--                    &lt;!&ndash; <div class="col-md-12">-->
+<!--              <div class="border-top pt-5">-->
+<!--                -->
+<!--              </div>-->
+<!--            </div> &ndash;&gt;-->
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </footer>-->
+
+<!--    </div>-->
+
+<!--    <script src="js/jquery-3.3.1.min.js"></script>-->
+<!--    <script src="js/popper.min.js"></script>-->
+<!--    <script src="js/bootstrap.min.js"></script>-->
+<!--    <script src="js/owl.carousel.min.js"></script>-->
+<!--    <script src="js/jquery.sticky.js"></script>-->
+<!--    <script src="js/jquery.waypoints.min.js"></script>-->
+<!--    <script src="js/jquery.animateNumber.min.js"></script>-->
+<!--    <script src="js/jquery.fancybox.min.js"></script>-->
+<!--    <script src="js/jquery.easing.1.3.js"></script>-->
+<!--    <script src="js/bootstrap-datepicker.min.js"></script>-->
+<!--    <script src="js/aos.js"></script>-->
+<!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"-->
+<!--        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">-->
+<!--    </script>-->
+<!--    <script src="js/main.js"></script>-->
+
+<!--</body>-->
+
+<!--</html>-->
+<%-include("partials/footer")-%>

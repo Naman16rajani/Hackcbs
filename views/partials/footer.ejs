@@ -1,0 +1,251 @@
+<!-- <div class="site-section bg-primary py-5">
+<div class="container">
+<div class="row align-items-center">
+  <div class="col-lg-7 mb-4 mb-md-0">
+    <h2 class="mb-0 text-white">What are you waiting for?</h2>
+    <p class="mb-0 opa-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
+  </div>
+  <div class="col-lg-5 text-md-right">
+    <a href="#" class="btn btn-primary btn-white">Contact us now</a>
+  </div>
+</div>
+</div>
+</div> -->
+
+
+<footer class="site-footer py-5">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-4">
+
+                <div class="text-center quick-contact-info">
+                    <div class="mb-3 icon-wrap">
+                        <span class="icon-phone"></span>
+                    </div>
+                    <span class="caption">23456633****</span>
+                </div>
+
+            </div>
+            <div class="col-lg-4">
+
+                <div class="text-center quick-contact-info">
+                    <div class="mb-3 icon-wrap">
+                        <span class="icon-room"></span>
+                    </div>
+                    <span class="caption">Gujrat, India
+                            </span>
+                </div>
+
+            </div>
+            <div class="col-lg-4">
+
+                <div class="text-center quick-contact-info">
+                    <div class="mb-3 icon-wrap">
+                        <span class="icon-envelope-o"></span>
+                    </div>
+                    <span class="caption">abc@mydomain.com</span>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="row pt-5 mt-5 text-center">
+            <div class="col-lg-7 text-lg-left">
+                <p>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>
+                    All rights reserved <i aria-hidden="true"></i><a href="https://colorlib.com"
+                                                                     target="_blank"></a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </p>
+            </div>
+            <div class="col-lg-5 text-lg-right">
+                <a href="#" class="ml-3">Terms</a>
+                <a href="#" class="ml-3">Privacy</a>
+            </div>
+            <!-- <div class="col-md-12">
+      <div class="border-top pt-5">
+
+      </div>
+    </div> -->
+
+        </div>
+    </div>
+</footer>
+
+</div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.sticky.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+</script>
+<script src="js/main.js"></script>
+<% if(notification === 1){ %>
+    <script src="client.js"></script>
+<% } %>
+<script>
+    let countries = [
+        "Chicken pox",
+        "Hepatitis",
+        "Dengue",
+        "Cholera",
+        "Malaria",
+        "Diabetes",
+        "Cancer",
+        "AIDS (Acquired Immuno Deficiency Syndrome)"
+    ]
+    let sym = [
+        "Nausea",
+        "vomiting",
+        "Rash",
+        "Aches and pains",
+        "fever",
+        "tiredness",
+        "loss of appetite",
+        "jaundice",
+        "Fatigue",
+        "Dark urine",
+        "Intense itching",
+        "leg cramps",
+        "thirst",
+        "rapid heart rate",
+        "anemia",
+        "diarrhea",
+        "heal slowly",
+        "more infections than usual",
+        "dry skin",
+        "Cough",
+        "Pain",
+        "Mouth ulcers",
+        "Swollen lymph nodes"
+
+    ]
+
+    function autocomplete(inp, arr) {
+        /*the autocomplete function takes two arguments,
+        the text field element and an array of possible autocompleted values:*/
+        var currentFocus;
+        /*execute a function when someone writes in the text field:*/
+        inp.addEventListener("input", function (e) {
+            var a, b, i, val = this.value;
+            /*close any already open lists of autocompleted values*/
+            closeAllLists();
+            if (!val) {
+                return false;
+            }
+            currentFocus = -1;
+            /*create a DIV element that will contain the items (values):*/
+            a = document.createElement("DIV");
+            a.setAttribute("id", this.id + "autocomplete-list");
+            a.setAttribute("class", "autocomplete-items");
+            /*append the DIV element as a child of the autocomplete container:*/
+            this.parentNode.appendChild(a);
+            /*for each item in the array...*/
+            for (i = 0; i < arr.length; i++) {
+                /*check if the item starts with the same letters as the text field value:*/
+                if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+                    /*create a DIV element for each matching element:*/
+                    b = document.createElement("DIV");
+                    /*make the matching letters bold:*/
+                    b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+                    b.innerHTML += arr[i].substr(val.length);
+                    /*insert a input field that will hold the current array item's value:*/
+                    b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+                    /*execute a function when someone clicks on the item value (DIV element):*/
+                    b.addEventListener("click", function (e) {
+                        /*insert the value for the autocomplete text field:*/
+                        inp.value = this.getElementsByTagName("input")[0].value;
+                        /*close the list of autocompleted values,
+                        (or any other open lists of autocompleted values:*/
+                        closeAllLists();
+                    });
+                    a.appendChild(b);
+                }
+            }
+        });
+        /*execute a function presses a key on the keyboard:*/
+        inp.addEventListener("keydown", function (e) {
+            var x = document.getElementById(this.id + "autocomplete-list");
+            if (x) x = x.getElementsByTagName("div");
+            if (e.keyCode == 40) {
+                /*If the arrow DOWN key is pressed,
+                increase the currentFocus variable:*/
+                currentFocus++;
+                /*and and make the current item more visible:*/
+                addActive(x);
+            } else if (e.keyCode == 38) { //up
+                /*If the arrow UP key is pressed,
+                decrease the currentFocus variable:*/
+                currentFocus--;
+                /*and and make the current item more visible:*/
+                addActive(x);
+            } else if (e.keyCode == 13) {
+                /*If the ENTER key is pressed, prevent the form from being submitted,*/
+                e.preventDefault();
+                if (currentFocus > -1) {
+                    /*and simulate a click on the "active" item:*/
+                    if (x) x[currentFocus].click();
+                }
+            }
+        });
+
+        function addActive(x) {
+            /*a function to classify an item as "active":*/
+            if (!x) return false;
+            /*start by removing the "active" class on all items:*/
+            removeActive(x);
+            if (currentFocus >= x.length) currentFocus = 0;
+            if (currentFocus < 0) currentFocus = (x.length - 1);
+            /*add class "autocomplete-active":*/
+            x[currentFocus].classList.add("autocomplete-active");
+        }
+
+        function removeActive(x) {
+            /*a function to remove the "active" class from all autocomplete items:*/
+            for (var i = 0; i < x.length; i++) {
+                x[i].classList.remove("autocomplete-active");
+            }
+        }
+
+        function closeAllLists(elmnt) {
+            /*close all autocomplete lists in the document,
+            except the one passed as an argument:*/
+            var x = document.getElementsByClassName("autocomplete-items");
+            for (var i = 0; i < x.length; i++) {
+                if (elmnt != x[i] && elmnt != inp) {
+                    x[i].parentNode.removeChild(x[i]);
+                }
+            }
+        }
+
+        /*execute a function when someone clicks in the document:*/
+        document.addEventListener("click", function (e) {
+            closeAllLists(e.target);
+        });
+    }
+
+    autocomplete(document.getElementById("myInput"), countries);
+    autocomplete(document.getElementById("myInput1"), countries);
+    autocomplete(document.getElementById("myInput2"), sym);
+
+
+</script>
+
+</body>
+
+</html>
